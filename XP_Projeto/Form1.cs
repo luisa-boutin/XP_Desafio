@@ -29,7 +29,7 @@ namespace XP_Projeto
             ordensAbertasDataGridView.Columns[6].Name = "Objeto"; // Objeto da movimentação financeira
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
             checkBoxColumn.HeaderText = "Selecionar";
-            checkBoxColumn.Width = 50;
+            checkBoxColumn.Width = 100;
             checkBoxColumn.Name = "checkBoxColumn";
             ordensAbertasDataGridView.Columns.Insert(7, checkBoxColumn);
 

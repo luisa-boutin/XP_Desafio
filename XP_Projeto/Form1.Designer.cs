@@ -29,6 +29,9 @@ namespace XP_Projeto
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.nomeLabel = new System.Windows.Forms.Label();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             this.controleLabel = new System.Windows.Forms.Label();
@@ -67,7 +70,7 @@ namespace XP_Projeto
             // 
             // nomeTextBox
             // 
-            this.nomeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.nomeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.nomeTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.nomeTextBox.Location = new System.Drawing.Point(82, 11);
             this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -86,14 +89,14 @@ namespace XP_Projeto
             // 
             // cadastroButton
             // 
-            this.cadastroButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cadastroButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(112)))));
+            this.cadastroButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cadastroButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
             this.cadastroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cadastroButton.ForeColor = System.Drawing.Color.White;
-            this.cadastroButton.Location = new System.Drawing.Point(1076, 10);
+            this.cadastroButton.Location = new System.Drawing.Point(289, 138);
             this.cadastroButton.Margin = new System.Windows.Forms.Padding(4);
             this.cadastroButton.Name = "cadastroButton";
-            this.cadastroButton.Size = new System.Drawing.Size(107, 32);
+            this.cadastroButton.Size = new System.Drawing.Size(239, 32);
             this.cadastroButton.TabIndex = 3;
             this.cadastroButton.Text = "Cadastrar";
             this.cadastroButton.UseVisualStyleBackColor = false;
@@ -102,18 +105,31 @@ namespace XP_Projeto
             // ordensAbertasDataGridView
             // 
             this.ordensAbertasDataGridView.AllowUserToAddRows = false;
-            this.ordensAbertasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ordensAbertasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.ordensAbertasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ordensAbertasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.ordensAbertasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ordensAbertasDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.ordensAbertasDataGridView.GridColor = System.Drawing.SystemColors.ControlText;
-            this.ordensAbertasDataGridView.Location = new System.Drawing.Point(13, 179);
+            this.ordensAbertasDataGridView.Location = new System.Drawing.Point(12, 178);
             this.ordensAbertasDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.ordensAbertasDataGridView.Name = "ordensAbertasDataGridView";
             this.ordensAbertasDataGridView.RowTemplate.Height = 25;
             this.ordensAbertasDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ordensAbertasDataGridView.Size = new System.Drawing.Size(1170, 210);
+            this.ordensAbertasDataGridView.Size = new System.Drawing.Size(1007, 210);
             this.ordensAbertasDataGridView.TabIndex = 4;
             this.ordensAbertasDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -129,12 +145,12 @@ namespace XP_Projeto
             // 
             // cpfTextBox
             // 
-            this.cpfTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.cpfTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.cpfTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cpfTextBox.Location = new System.Drawing.Point(860, 11);
             this.cpfTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cpfTextBox.Name = "cpfTextBox";
-            this.cpfTextBox.Size = new System.Drawing.Size(141, 27);
+            this.cpfTextBox.Size = new System.Drawing.Size(156, 27);
             this.cpfTextBox.TabIndex = 6;
             // 
             // telefoneLabel
@@ -149,7 +165,7 @@ namespace XP_Projeto
             // 
             // telefoneTextBox
             // 
-            this.telefoneTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.telefoneTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.telefoneTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.telefoneTextBox.Location = new System.Drawing.Point(621, 10);
             this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -180,12 +196,12 @@ namespace XP_Projeto
             // 
             // codigoTextBox
             // 
-            this.codigoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.codigoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.codigoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.codigoTextBox.Location = new System.Drawing.Point(860, 57);
             this.codigoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.codigoTextBox.Name = "codigoTextBox";
-            this.codigoTextBox.Size = new System.Drawing.Size(141, 27);
+            this.codigoTextBox.Size = new System.Drawing.Size(156, 27);
             this.codigoTextBox.TabIndex = 12;
             // 
             // operacaoLabel
@@ -200,7 +216,7 @@ namespace XP_Projeto
             // 
             // operacaoTextBox
             // 
-            this.operacaoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.operacaoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.operacaoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.operacaoTextBox.Location = new System.Drawing.Point(114, 57);
             this.operacaoTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -210,7 +226,7 @@ namespace XP_Projeto
             // 
             // identificadorTextBox
             // 
-            this.identificadorTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.identificadorTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.identificadorTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.identificadorTextBox.Location = new System.Drawing.Point(380, 57);
             this.identificadorTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -220,7 +236,7 @@ namespace XP_Projeto
             // 
             // objetoTextBox
             // 
-            this.objetoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.objetoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.objetoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.objetoTextBox.Location = new System.Drawing.Point(621, 57);
             this.objetoTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -261,13 +277,13 @@ namespace XP_Projeto
             // 
             // excluirButton
             // 
-            this.excluirButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.excluirButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(112)))));
+            this.excluirButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.excluirButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
             this.excluirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.excluirButton.Location = new System.Drawing.Point(1020, 55);
+            this.excluirButton.Location = new System.Drawing.Point(536, 138);
             this.excluirButton.Margin = new System.Windows.Forms.Padding(4);
             this.excluirButton.Name = "excluirButton";
-            this.excluirButton.Size = new System.Drawing.Size(163, 32);
+            this.excluirButton.Size = new System.Drawing.Size(239, 32);
             this.excluirButton.TabIndex = 20;
             this.excluirButton.Text = "Cancelar Ordem";
             this.excluirButton.UseVisualStyleBackColor = false;
@@ -275,9 +291,9 @@ namespace XP_Projeto
             // 
             // finOrdemButton
             // 
-            this.finOrdemButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(112)))));
+            this.finOrdemButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
             this.finOrdemButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.finOrdemButton.Location = new System.Drawing.Point(944, 133);
+            this.finOrdemButton.Location = new System.Drawing.Point(782, 138);
             this.finOrdemButton.Name = "finOrdemButton";
             this.finOrdemButton.Size = new System.Drawing.Size(239, 32);
             this.finOrdemButton.TabIndex = 21;
@@ -287,22 +303,30 @@ namespace XP_Projeto
             // 
             // ordensFechadasDataGridView
             // 
-            this.ordensFechadasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
+            this.ordensFechadasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ordensFechadasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.ordensFechadasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ordensFechadasDataGridView.Location = new System.Drawing.Point(12, 449);
             this.ordensFechadasDataGridView.Name = "ordensFechadasDataGridView";
             this.ordensFechadasDataGridView.RowTemplate.Height = 25;
             this.ordensFechadasDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ordensFechadasDataGridView.Size = new System.Drawing.Size(1171, 207);
+            this.ordensFechadasDataGridView.Size = new System.Drawing.Size(1009, 207);
             this.ordensFechadasDataGridView.TabIndex = 22;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(19)))), ((int)(((byte)(45)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(34)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1196, 684);
+            this.ClientSize = new System.Drawing.Size(1029, 684);
             this.Controls.Add(this.ordensFechadasDataGridView);
             this.Controls.Add(this.finOrdemButton);
             this.Controls.Add(this.excluirButton);
