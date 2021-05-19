@@ -43,13 +43,13 @@ namespace XP_Projeto
             this.telefoneLabel = new System.Windows.Forms.Label();
             this.telefoneTextBox = new System.Windows.Forms.TextBox();
             this.ordensFinalizadasLabel = new System.Windows.Forms.Label();
-            this.codigoLabel = new System.Windows.Forms.Label();
-            this.codigoTextBox = new System.Windows.Forms.TextBox();
+            this.precoLabel = new System.Windows.Forms.Label();
+            this.precoTextBox = new System.Windows.Forms.TextBox();
             this.operacaoLabel = new System.Windows.Forms.Label();
-            this.identificadorTextBox = new System.Windows.Forms.TextBox();
-            this.objetoTextBox = new System.Windows.Forms.TextBox();
-            this.identificadorLabel = new System.Windows.Forms.Label();
-            this.objetoLabel = new System.Windows.Forms.Label();
+            this.ativoTextBox = new System.Windows.Forms.TextBox();
+            this.quantidadeTextBox = new System.Windows.Forms.TextBox();
+            this.ativoLabel = new System.Windows.Forms.Label();
+            this.quantidadeLabel = new System.Windows.Forms.Label();
             this.ordensAbertasLabel = new System.Windows.Forms.Label();
             this.excluirButton = new System.Windows.Forms.Button();
             this.finOrdemButton = new System.Windows.Forms.Button();
@@ -185,25 +185,25 @@ namespace XP_Projeto
             this.ordensFinalizadasLabel.TabIndex = 10;
             this.ordensFinalizadasLabel.Text = "Ordens Finalizadas:";
             // 
-            // codigoLabel
+            // precoLabel
             // 
-            this.codigoLabel.AutoSize = true;
-            this.codigoLabel.Location = new System.Drawing.Point(780, 60);
-            this.codigoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.codigoLabel.Name = "codigoLabel";
-            this.codigoLabel.Size = new System.Drawing.Size(72, 21);
-            this.codigoLabel.TabIndex = 11;
-            this.codigoLabel.Text = "Código:";
+            this.precoLabel.AutoSize = true;
+            this.precoLabel.Location = new System.Drawing.Point(794, 60);
+            this.precoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.precoLabel.Name = "precoLabel";
+            this.precoLabel.Size = new System.Drawing.Size(58, 21);
+            this.precoLabel.TabIndex = 11;
+            this.precoLabel.Text = "Preço:";
             // 
-            // codigoTextBox
+            // precoTextBox
             // 
-            this.codigoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.codigoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.codigoTextBox.Location = new System.Drawing.Point(860, 57);
-            this.codigoTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.codigoTextBox.Name = "codigoTextBox";
-            this.codigoTextBox.Size = new System.Drawing.Size(156, 27);
-            this.codigoTextBox.TabIndex = 12;
+            this.precoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.precoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.precoTextBox.Location = new System.Drawing.Point(860, 57);
+            this.precoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.precoTextBox.Name = "precoTextBox";
+            this.precoTextBox.Size = new System.Drawing.Size(156, 27);
+            this.precoTextBox.TabIndex = 12;
             // 
             // operacaoLabel
             // 
@@ -215,45 +215,45 @@ namespace XP_Projeto
             this.operacaoLabel.TabIndex = 13;
             this.operacaoLabel.Text = "Operação:";
             // 
-            // identificadorTextBox
+            // ativoTextBox
             // 
-            this.identificadorTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.identificadorTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.identificadorTextBox.Location = new System.Drawing.Point(380, 57);
-            this.identificadorTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.identificadorTextBox.Name = "identificadorTextBox";
-            this.identificadorTextBox.Size = new System.Drawing.Size(148, 27);
-            this.identificadorTextBox.TabIndex = 15;
+            this.ativoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.ativoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ativoTextBox.Location = new System.Drawing.Point(621, 57);
+            this.ativoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ativoTextBox.Name = "ativoTextBox";
+            this.ativoTextBox.Size = new System.Drawing.Size(141, 27);
+            this.ativoTextBox.TabIndex = 15;
             // 
-            // objetoTextBox
+            // quantidadeTextBox
             // 
-            this.objetoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.objetoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.objetoTextBox.Location = new System.Drawing.Point(621, 57);
-            this.objetoTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.objetoTextBox.Name = "objetoTextBox";
-            this.objetoTextBox.Size = new System.Drawing.Size(141, 27);
-            this.objetoTextBox.TabIndex = 16;
+            this.quantidadeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.quantidadeTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.quantidadeTextBox.Location = new System.Drawing.Point(387, 59);
+            this.quantidadeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.quantidadeTextBox.Name = "quantidadeTextBox";
+            this.quantidadeTextBox.Size = new System.Drawing.Size(141, 27);
+            this.quantidadeTextBox.TabIndex = 16;
             // 
-            // identificadorLabel
+            // ativoLabel
             // 
-            this.identificadorLabel.AutoSize = true;
-            this.identificadorLabel.Location = new System.Drawing.Point(263, 60);
-            this.identificadorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.identificadorLabel.Name = "identificadorLabel";
-            this.identificadorLabel.Size = new System.Drawing.Size(115, 21);
-            this.identificadorLabel.TabIndex = 17;
-            this.identificadorLabel.Text = "Identificador:";
+            this.ativoLabel.AutoSize = true;
+            this.ativoLabel.Location = new System.Drawing.Point(556, 60);
+            this.ativoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ativoLabel.Name = "ativoLabel";
+            this.ativoLabel.Size = new System.Drawing.Size(57, 21);
+            this.ativoLabel.TabIndex = 17;
+            this.ativoLabel.Text = "Ativo:";
             // 
-            // objetoLabel
+            // quantidadeLabel
             // 
-            this.objetoLabel.AutoSize = true;
-            this.objetoLabel.Location = new System.Drawing.Point(544, 60);
-            this.objetoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.objetoLabel.Name = "objetoLabel";
-            this.objetoLabel.Size = new System.Drawing.Size(69, 21);
-            this.objetoLabel.TabIndex = 18;
-            this.objetoLabel.Text = "Objeto:";
+            this.quantidadeLabel.AutoSize = true;
+            this.quantidadeLabel.Location = new System.Drawing.Point(267, 62);
+            this.quantidadeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.quantidadeLabel.Name = "quantidadeLabel";
+            this.quantidadeLabel.Size = new System.Drawing.Size(112, 21);
+            this.quantidadeLabel.TabIndex = 18;
+            this.quantidadeLabel.Text = "Quantidade:";
             // 
             // ordensAbertasLabel
             // 
@@ -346,13 +346,13 @@ namespace XP_Projeto
             this.Controls.Add(this.finOrdemButton);
             this.Controls.Add(this.excluirButton);
             this.Controls.Add(this.ordensAbertasLabel);
-            this.Controls.Add(this.objetoLabel);
-            this.Controls.Add(this.identificadorLabel);
-            this.Controls.Add(this.objetoTextBox);
-            this.Controls.Add(this.identificadorTextBox);
+            this.Controls.Add(this.quantidadeLabel);
+            this.Controls.Add(this.ativoLabel);
+            this.Controls.Add(this.quantidadeTextBox);
+            this.Controls.Add(this.ativoTextBox);
             this.Controls.Add(this.operacaoLabel);
-            this.Controls.Add(this.codigoTextBox);
-            this.Controls.Add(this.codigoLabel);
+            this.Controls.Add(this.precoTextBox);
+            this.Controls.Add(this.precoLabel);
             this.Controls.Add(this.ordensFinalizadasLabel);
             this.Controls.Add(this.telefoneTextBox);
             this.Controls.Add(this.telefoneLabel);
@@ -388,13 +388,13 @@ namespace XP_Projeto
         private System.Windows.Forms.Label telefoneLabel;
         private System.Windows.Forms.TextBox telefoneTextBox;
         private System.Windows.Forms.Label ordensFinalizadasLabel;
-        private System.Windows.Forms.Label codigoLabel;
-        private System.Windows.Forms.TextBox codigoTextBox;
+        private System.Windows.Forms.Label precoLabel;
+        private System.Windows.Forms.TextBox precoTextBox;
         private System.Windows.Forms.Label operacaoLabel;
-        private System.Windows.Forms.TextBox identificadorTextBox;
-        private System.Windows.Forms.TextBox objetoTextBox;
-        private System.Windows.Forms.Label identificadorLabel;
-        private System.Windows.Forms.Label objetoLabel;
+        private System.Windows.Forms.TextBox ativoTextBox;
+        private System.Windows.Forms.TextBox quantidadeTextBox;
+        private System.Windows.Forms.Label ativoLabel;
+        private System.Windows.Forms.Label quantidadeLabel;
         private System.Windows.Forms.Label ordensAbertasLabel;
         private System.Windows.Forms.Button excluirButton;
         private System.Windows.Forms.Button finOrdemButton;
