@@ -32,6 +32,7 @@ namespace XP_Projeto
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.nomeLabel = new System.Windows.Forms.Label();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             this.controleLabel = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@ namespace XP_Projeto
             this.codigoLabel = new System.Windows.Forms.Label();
             this.codigoTextBox = new System.Windows.Forms.TextBox();
             this.operacaoLabel = new System.Windows.Forms.Label();
-            this.operacaoTextBox = new System.Windows.Forms.TextBox();
             this.identificadorTextBox = new System.Windows.Forms.TextBox();
             this.objetoTextBox = new System.Windows.Forms.TextBox();
             this.identificadorLabel = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@ namespace XP_Projeto
             this.excluirButton = new System.Windows.Forms.Button();
             this.finOrdemButton = new System.Windows.Forms.Button();
             this.ordensFechadasDataGridView = new System.Windows.Forms.DataGridView();
+            this.operacaoComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ordensAbertasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordensFechadasDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -107,9 +108,9 @@ namespace XP_Projeto
             this.ordensAbertasDataGridView.AllowUserToAddRows = false;
             this.ordensAbertasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -214,16 +215,6 @@ namespace XP_Projeto
             this.operacaoLabel.TabIndex = 13;
             this.operacaoLabel.Text = "Operação:";
             // 
-            // operacaoTextBox
-            // 
-            this.operacaoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.operacaoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.operacaoTextBox.Location = new System.Drawing.Point(114, 57);
-            this.operacaoTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.operacaoTextBox.Name = "operacaoTextBox";
-            this.operacaoTextBox.Size = new System.Drawing.Size(141, 27);
-            this.operacaoTextBox.TabIndex = 14;
-            // 
             // identificadorTextBox
             // 
             this.identificadorTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
@@ -303,22 +294,45 @@ namespace XP_Projeto
             // 
             // ordensFechadasDataGridView
             // 
+            this.ordensFechadasDataGridView.AllowUserToAddRows = false;
+            this.ordensFechadasDataGridView.AllowUserToDeleteRows = false;
             this.ordensFechadasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ordensFechadasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.ordensFechadasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ordensFechadasDataGridView.Location = new System.Drawing.Point(12, 449);
             this.ordensFechadasDataGridView.Name = "ordensFechadasDataGridView";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ordensFechadasDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.ordensFechadasDataGridView.RowTemplate.Height = 25;
             this.ordensFechadasDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ordensFechadasDataGridView.Size = new System.Drawing.Size(1009, 207);
             this.ordensFechadasDataGridView.TabIndex = 22;
+            // 
+            // operacaoComboBox
+            // 
+            this.operacaoComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.operacaoComboBox.ForeColor = System.Drawing.Color.White;
+            this.operacaoComboBox.FormattingEnabled = true;
+            this.operacaoComboBox.Items.AddRange(new object[] {
+            "Compra",
+            "Venda"});
+            this.operacaoComboBox.Location = new System.Drawing.Point(116, 57);
+            this.operacaoComboBox.Name = "operacaoComboBox";
+            this.operacaoComboBox.Size = new System.Drawing.Size(140, 29);
+            this.operacaoComboBox.TabIndex = 23;
             // 
             // Form1
             // 
@@ -327,6 +341,7 @@ namespace XP_Projeto
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(34)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1029, 684);
+            this.Controls.Add(this.operacaoComboBox);
             this.Controls.Add(this.ordensFechadasDataGridView);
             this.Controls.Add(this.finOrdemButton);
             this.Controls.Add(this.excluirButton);
@@ -335,7 +350,6 @@ namespace XP_Projeto
             this.Controls.Add(this.identificadorLabel);
             this.Controls.Add(this.objetoTextBox);
             this.Controls.Add(this.identificadorTextBox);
-            this.Controls.Add(this.operacaoTextBox);
             this.Controls.Add(this.operacaoLabel);
             this.Controls.Add(this.codigoTextBox);
             this.Controls.Add(this.codigoLabel);
@@ -377,7 +391,6 @@ namespace XP_Projeto
         private System.Windows.Forms.Label codigoLabel;
         private System.Windows.Forms.TextBox codigoTextBox;
         private System.Windows.Forms.Label operacaoLabel;
-        private System.Windows.Forms.TextBox operacaoTextBox;
         private System.Windows.Forms.TextBox identificadorTextBox;
         private System.Windows.Forms.TextBox objetoTextBox;
         private System.Windows.Forms.Label identificadorLabel;
@@ -386,6 +399,7 @@ namespace XP_Projeto
         private System.Windows.Forms.Button excluirButton;
         private System.Windows.Forms.Button finOrdemButton;
         private System.Windows.Forms.DataGridView ordensFechadasDataGridView;
+        private System.Windows.Forms.ComboBox operacaoComboBox;
     }
 }
 
