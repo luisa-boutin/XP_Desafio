@@ -24,10 +24,10 @@ namespace XP_Projeto
             ordensAbertasDataGridView.Columns[0].Name = "Nome"; // Nome do cliente
             ordensAbertasDataGridView.Columns[1].Name = "Telefone"; // Telefone do cliente
             ordensAbertasDataGridView.Columns[2].Name = "CPF"; // CPF do cliente
-            ordensAbertasDataGridView.Columns[3].Name = "Código"; // Código do cliente
+            ordensAbertasDataGridView.Columns[3].Name = "Preço"; // Preço de cada unidade
             ordensAbertasDataGridView.Columns[4].Name = "Operação"; // Tipo da operação efetuada (Compra/Venda)
-            ordensAbertasDataGridView.Columns[5].Name = "Identificador"; // Identificador da transação 
-            ordensAbertasDataGridView.Columns[6].Name = "Objeto"; // Objeto da movimentação financeira
+            ordensAbertasDataGridView.Columns[5].Name = "Ativo"; // Identificador do ativo 
+            ordensAbertasDataGridView.Columns[6].Name = "Quantidade"; // Quantidade de ativos movimentos
             DataGridViewCheckBoxColumn checkBoxColuna = new DataGridViewCheckBoxColumn();
             checkBoxColuna.HeaderText = "Selecionar";
             checkBoxColuna.Width = 100;
@@ -38,18 +38,18 @@ namespace XP_Projeto
             ordensFechadasDataGridView.Columns[0].Name = "Nome"; // Nome do cliente
             ordensFechadasDataGridView.Columns[1].Name = "Telefone"; // Telefone do cliente
             ordensFechadasDataGridView.Columns[2].Name = "CPF"; // CPF do cliente
-            ordensFechadasDataGridView.Columns[3].Name = "Código"; // Código do cliente
+            ordensFechadasDataGridView.Columns[3].Name = "Preço"; // Preço de cada unidade
             ordensFechadasDataGridView.Columns[4].Name = "Operação"; // Tipo da operação efetuada (Compra/Venda)
-            ordensFechadasDataGridView.Columns[5].Name = "Identificador"; // Identificador da transação 
-            ordensFechadasDataGridView.Columns[6].Name = "Objeto"; // Objeto da movimentação financeira
+            ordensFechadasDataGridView.Columns[5].Name = "Ativo"; // Identificador do ativo 
+            ordensFechadasDataGridView.Columns[6].Name = "Quantidade"; // Quantidade de ativos movimentos
         }
 
         private bool validaCampos()
         {
             return !string.IsNullOrWhiteSpace(nomeTextBox.Text) && !string.IsNullOrWhiteSpace(telefoneTextBox.Text) &&
-                !string.IsNullOrWhiteSpace(cpfTextBox.Text) && !string.IsNullOrWhiteSpace(codigoTextBox.Text) &&
-                !string.IsNullOrWhiteSpace(operacaoComboBox.Text) && !string.IsNullOrWhiteSpace(identificadorTextBox.Text)
-                && !string.IsNullOrWhiteSpace(objetoTextBox.Text);
+                !string.IsNullOrWhiteSpace(cpfTextBox.Text) && !string.IsNullOrWhiteSpace(precoTextBox.Text) &&
+                !string.IsNullOrWhiteSpace(operacaoComboBox.Text) && !string.IsNullOrWhiteSpace(ativoTextBox.Text)
+                && !string.IsNullOrWhiteSpace(quantidadeTextBox.Text);
         }
 
         private void cadastroButton_Click(object sender, EventArgs e)
@@ -62,8 +62,15 @@ namespace XP_Projeto
                 // Extrair método: 
                 Ordem ordem = new Ordem();
                 ordem.Nome = nomeTextBox.Text;
+                ordem.Telefone = telefoneTextBox.Text;
+                ordem.CPF = cpfTextBox.Text;
+                ordem.Preco = precoTextBox.Text;
+                ordem.Operacao = operacaoComboBox.Text;
+                ordem.Ativo = ativoTextBox.Text;
+                ordem.Quantidade = quantidadeTextBox.Text;
+
                 ordensAbertasDataGridView.Rows.Add(nomeTextBox.Text, telefoneTextBox.Text, cpfTextBox.Text, 
-                    codigoTextBox.Text, operacaoComboBox.Text, identificadorTextBox.Text, objetoTextBox.Text);
+                    precoTextBox.Text, operacaoComboBox.Text, ativoTextBox.Text, quantidadeTextBox.Text);
             }
             else
             {
