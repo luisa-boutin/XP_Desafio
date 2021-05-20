@@ -1,7 +1,7 @@
 ﻿
 namespace XP_Projeto
 {
-    partial class Form1
+    partial class controleForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,11 +29,11 @@ namespace XP_Projeto
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.nomeLabel = new System.Windows.Forms.Label();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             this.controleLabel = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@ namespace XP_Projeto
             // 
             this.nomeLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.nomeLabel.AutoSize = true;
-            this.nomeLabel.Location = new System.Drawing.Point(13, 13);
+            this.nomeLabel.Location = new System.Drawing.Point(48, 32);
             this.nomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nomeLabel.Name = "nomeLabel";
             this.nomeLabel.Size = new System.Drawing.Size(61, 21);
@@ -77,16 +77,16 @@ namespace XP_Projeto
             this.nomeTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.nomeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.nomeTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.nomeTextBox.Location = new System.Drawing.Point(82, 11);
+            this.nomeTextBox.Location = new System.Drawing.Point(117, 29);
             this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(446, 27);
+            this.nomeTextBox.Size = new System.Drawing.Size(558, 27);
             this.nomeTextBox.TabIndex = 1;
             // 
             // controleLabel
             // 
             this.controleLabel.AutoSize = true;
-            this.controleLabel.Location = new System.Drawing.Point(19, 105);
+            this.controleLabel.Location = new System.Drawing.Point(48, 120);
             this.controleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.controleLabel.Name = "controleLabel";
             this.controleLabel.Size = new System.Drawing.Size(0, 21);
@@ -98,7 +98,7 @@ namespace XP_Projeto
             this.cadastroButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
             this.cadastroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cadastroButton.ForeColor = System.Drawing.Color.White;
-            this.cadastroButton.Location = new System.Drawing.Point(264, 138);
+            this.cadastroButton.Location = new System.Drawing.Point(421, 147);
             this.cadastroButton.Margin = new System.Windows.Forms.Padding(4);
             this.cadastroButton.Name = "cadastroButton";
             this.cadastroButton.Size = new System.Drawing.Size(184, 32);
@@ -112,38 +112,38 @@ namespace XP_Projeto
             this.ordensAbertasDataGridView.AllowUserToAddRows = false;
             this.ordensAbertasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ordensAbertasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ordensAbertasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ordensAbertasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.ordensAbertasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ordensAbertasDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ordensAbertasDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
             this.ordensAbertasDataGridView.GridColor = System.Drawing.SystemColors.ControlText;
-            this.ordensAbertasDataGridView.Location = new System.Drawing.Point(12, 178);
+            this.ordensAbertasDataGridView.Location = new System.Drawing.Point(48, 196);
             this.ordensAbertasDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.ordensAbertasDataGridView.MultiSelect = false;
             this.ordensAbertasDataGridView.Name = "ordensAbertasDataGridView";
             this.ordensAbertasDataGridView.RowTemplate.Height = 25;
             this.ordensAbertasDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ordensAbertasDataGridView.Size = new System.Drawing.Size(1007, 210);
+            this.ordensAbertasDataGridView.Size = new System.Drawing.Size(1165, 210);
             this.ordensAbertasDataGridView.TabIndex = 4;
             // 
             // cpfLabel
             // 
             this.cpfLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cpfLabel.AutoSize = true;
-            this.cpfLabel.Location = new System.Drawing.Point(808, 13);
+            this.cpfLabel.Location = new System.Drawing.Point(981, 31);
             this.cpfLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cpfLabel.Name = "cpfLabel";
             this.cpfLabel.Size = new System.Drawing.Size(44, 21);
@@ -155,17 +155,17 @@ namespace XP_Projeto
             this.cpfTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cpfTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.cpfTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cpfTextBox.Location = new System.Drawing.Point(860, 11);
+            this.cpfTextBox.Location = new System.Drawing.Point(1033, 29);
             this.cpfTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cpfTextBox.Name = "cpfTextBox";
-            this.cpfTextBox.Size = new System.Drawing.Size(156, 27);
+            this.cpfTextBox.Size = new System.Drawing.Size(180, 27);
             this.cpfTextBox.TabIndex = 6;
             // 
             // telefoneLabel
             // 
             this.telefoneLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.telefoneLabel.AutoSize = true;
-            this.telefoneLabel.Location = new System.Drawing.Point(536, 13);
+            this.telefoneLabel.Location = new System.Drawing.Point(689, 31);
             this.telefoneLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.telefoneLabel.Name = "telefoneLabel";
             this.telefoneLabel.Size = new System.Drawing.Size(80, 21);
@@ -177,17 +177,17 @@ namespace XP_Projeto
             this.telefoneTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.telefoneTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.telefoneTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.telefoneTextBox.Location = new System.Drawing.Point(621, 10);
+            this.telefoneTextBox.Location = new System.Drawing.Point(777, 28);
             this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.telefoneTextBox.Name = "telefoneTextBox";
-            this.telefoneTextBox.Size = new System.Drawing.Size(141, 27);
+            this.telefoneTextBox.Size = new System.Drawing.Size(164, 27);
             this.telefoneTextBox.TabIndex = 8;
             // 
             // ordensFinalizadasLabel
             // 
             this.ordensFinalizadasLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ordensFinalizadasLabel.AutoSize = true;
-            this.ordensFinalizadasLabel.Location = new System.Drawing.Point(13, 407);
+            this.ordensFinalizadasLabel.Location = new System.Drawing.Point(48, 426);
             this.ordensFinalizadasLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ordensFinalizadasLabel.Name = "ordensFinalizadasLabel";
             this.ordensFinalizadasLabel.Size = new System.Drawing.Size(158, 21);
@@ -198,7 +198,7 @@ namespace XP_Projeto
             // 
             this.precoLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.precoLabel.AutoSize = true;
-            this.precoLabel.Location = new System.Drawing.Point(794, 60);
+            this.precoLabel.Location = new System.Drawing.Point(967, 78);
             this.precoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.precoLabel.Name = "precoLabel";
             this.precoLabel.Size = new System.Drawing.Size(58, 21);
@@ -210,17 +210,17 @@ namespace XP_Projeto
             this.precoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.precoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.precoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.precoTextBox.Location = new System.Drawing.Point(860, 57);
+            this.precoTextBox.Location = new System.Drawing.Point(1033, 74);
             this.precoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.precoTextBox.Name = "precoTextBox";
-            this.precoTextBox.Size = new System.Drawing.Size(156, 27);
+            this.precoTextBox.Size = new System.Drawing.Size(180, 27);
             this.precoTextBox.TabIndex = 12;
             // 
             // operacaoLabel
             // 
             this.operacaoLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.operacaoLabel.AutoSize = true;
-            this.operacaoLabel.Location = new System.Drawing.Point(13, 59);
+            this.operacaoLabel.Location = new System.Drawing.Point(48, 78);
             this.operacaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.operacaoLabel.Name = "operacaoLabel";
             this.operacaoLabel.Size = new System.Drawing.Size(96, 21);
@@ -232,10 +232,10 @@ namespace XP_Projeto
             this.ativoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ativoTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.ativoTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ativoTextBox.Location = new System.Drawing.Point(621, 57);
+            this.ativoTextBox.Location = new System.Drawing.Point(777, 74);
             this.ativoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ativoTextBox.Name = "ativoTextBox";
-            this.ativoTextBox.Size = new System.Drawing.Size(141, 27);
+            this.ativoTextBox.Size = new System.Drawing.Size(164, 27);
             this.ativoTextBox.TabIndex = 15;
             // 
             // quantidadeTextBox
@@ -243,17 +243,17 @@ namespace XP_Projeto
             this.quantidadeTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.quantidadeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.quantidadeTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.quantidadeTextBox.Location = new System.Drawing.Point(387, 59);
+            this.quantidadeTextBox.Location = new System.Drawing.Point(478, 74);
             this.quantidadeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.quantidadeTextBox.Name = "quantidadeTextBox";
-            this.quantidadeTextBox.Size = new System.Drawing.Size(141, 27);
+            this.quantidadeTextBox.Size = new System.Drawing.Size(197, 27);
             this.quantidadeTextBox.TabIndex = 16;
             // 
             // ativoLabel
             // 
             this.ativoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ativoLabel.AutoSize = true;
-            this.ativoLabel.Location = new System.Drawing.Point(556, 60);
+            this.ativoLabel.Location = new System.Drawing.Point(712, 78);
             this.ativoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ativoLabel.Name = "ativoLabel";
             this.ativoLabel.Size = new System.Drawing.Size(57, 21);
@@ -264,7 +264,7 @@ namespace XP_Projeto
             // 
             this.quantidadeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.quantidadeLabel.AutoSize = true;
-            this.quantidadeLabel.Location = new System.Drawing.Point(267, 62);
+            this.quantidadeLabel.Location = new System.Drawing.Point(358, 78);
             this.quantidadeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.quantidadeLabel.Name = "quantidadeLabel";
             this.quantidadeLabel.Size = new System.Drawing.Size(112, 21);
@@ -275,7 +275,7 @@ namespace XP_Projeto
             // 
             this.ordensAbertasLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ordensAbertasLabel.AutoSize = true;
-            this.ordensAbertasLabel.Location = new System.Drawing.Point(13, 144);
+            this.ordensAbertasLabel.Location = new System.Drawing.Point(44, 153);
             this.ordensAbertasLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ordensAbertasLabel.Name = "ordensAbertasLabel";
             this.ordensAbertasLabel.Size = new System.Drawing.Size(159, 21);
@@ -287,7 +287,7 @@ namespace XP_Projeto
             this.excluirButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.excluirButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
             this.excluirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.excluirButton.Location = new System.Drawing.Point(646, 138);
+            this.excluirButton.Location = new System.Drawing.Point(822, 147);
             this.excluirButton.Margin = new System.Windows.Forms.Padding(4);
             this.excluirButton.Name = "excluirButton";
             this.excluirButton.Size = new System.Drawing.Size(184, 32);
@@ -301,7 +301,7 @@ namespace XP_Projeto
             this.finOrdemButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.finOrdemButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
             this.finOrdemButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.finOrdemButton.Location = new System.Drawing.Point(837, 138);
+            this.finOrdemButton.Location = new System.Drawing.Point(1025, 147);
             this.finOrdemButton.Name = "finOrdemButton";
             this.finOrdemButton.Size = new System.Drawing.Size(184, 32);
             this.finOrdemButton.TabIndex = 21;
@@ -316,38 +316,38 @@ namespace XP_Projeto
             this.ordensFechadasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ordensFechadasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ordensFechadasDataGridView.CausesValidation = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ordensFechadasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ordensFechadasDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.ordensFechadasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ordensFechadasDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ordensFechadasDataGridView.Location = new System.Drawing.Point(12, 449);
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ordensFechadasDataGridView.DefaultCellStyle = dataGridViewCellStyle9;
+            this.ordensFechadasDataGridView.Location = new System.Drawing.Point(48, 467);
             this.ordensFechadasDataGridView.MultiSelect = false;
             this.ordensFechadasDataGridView.Name = "ordensFechadasDataGridView";
             this.ordensFechadasDataGridView.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ordensFechadasDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ordensFechadasDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.ordensFechadasDataGridView.RowTemplate.Height = 25;
             this.ordensFechadasDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ordensFechadasDataGridView.Size = new System.Drawing.Size(1009, 207);
+            this.ordensFechadasDataGridView.Size = new System.Drawing.Size(1165, 207);
             this.ordensFechadasDataGridView.TabIndex = 22;
             // 
             // operacaoComboBox
@@ -359,9 +359,9 @@ namespace XP_Projeto
             this.operacaoComboBox.Items.AddRange(new object[] {
             "Compra",
             "Venda"});
-            this.operacaoComboBox.Location = new System.Drawing.Point(116, 57);
+            this.operacaoComboBox.Location = new System.Drawing.Point(151, 74);
             this.operacaoComboBox.Name = "operacaoComboBox";
-            this.operacaoComboBox.Size = new System.Drawing.Size(140, 29);
+            this.operacaoComboBox.Size = new System.Drawing.Size(188, 29);
             this.operacaoComboBox.TabIndex = 23;
             // 
             // editarButton
@@ -369,7 +369,7 @@ namespace XP_Projeto
             this.editarButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.editarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(52)))), ((int)(((byte)(92)))));
             this.editarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editarButton.Location = new System.Drawing.Point(455, 138);
+            this.editarButton.Location = new System.Drawing.Point(621, 147);
             this.editarButton.Name = "editarButton";
             this.editarButton.Size = new System.Drawing.Size(184, 32);
             this.editarButton.TabIndex = 24;
@@ -377,13 +377,13 @@ namespace XP_Projeto
             this.editarButton.UseVisualStyleBackColor = false;
             this.editarButton.Click += new System.EventHandler(this.editarButton_Click);
             // 
-            // Form1
+            // controleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(34)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1029, 684);
+            this.ClientSize = new System.Drawing.Size(1264, 720);
             this.Controls.Add(this.editarButton);
             this.Controls.Add(this.operacaoComboBox);
             this.Controls.Add(this.ordensFechadasDataGridView);
@@ -409,9 +409,12 @@ namespace XP_Projeto
             this.Controls.Add(this.nomeLabel);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.HelpButton = true;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
+            this.Name = "controleForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Controle";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ordensAbertasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordensFechadasDataGridView)).EndInit();
