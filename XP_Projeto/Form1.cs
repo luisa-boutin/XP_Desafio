@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,6 +13,8 @@ namespace XP_Projeto
 {
     public partial class Form1 : Form
     {
+        // Criação de uma lista de objetos da classe Ordem:
+        List<Ordem> ordemLista = new List<Ordem>();
         public Form1()
         {
             InitializeComponent();
@@ -46,6 +49,7 @@ namespace XP_Projeto
 
         private bool validaCampos()
         {
+            // Verificação se os campos estão preenchidos com caracteres ou números
             return !string.IsNullOrWhiteSpace(nomeTextBox.Text) && !string.IsNullOrWhiteSpace(telefoneTextBox.Text) &&
                 !string.IsNullOrWhiteSpace(cpfTextBox.Text) && !string.IsNullOrWhiteSpace(precoTextBox.Text) &&
                 !string.IsNullOrWhiteSpace(operacaoComboBox.Text) && !string.IsNullOrWhiteSpace(ativoTextBox.Text)
@@ -54,20 +58,13 @@ namespace XP_Projeto
 
         private void cadastroButton_Click(object sender, EventArgs e)
         {
-            // Validação de preenchimento dos campos mediante clique no botão:
-
+            // Apenas permite um cadastro se todos os campos estão preenchidos:
             if (validaCampos())
             {
                 controleLabel.Text = "Cadastro efetuado!";
-                // Extrair método: 
-                Ordem ordem = new Ordem();
-                ordem.Nome = nomeTextBox.Text;
-                ordem.Telefone = telefoneTextBox.Text;
-                ordem.CPF = cpfTextBox.Text;
-                ordem.Preco = precoTextBox.Text;
-                ordem.Operacao = operacaoComboBox.Text;
-                ordem.Ativo = ativoTextBox.Text;
-                ordem.Quantidade = quantidadeTextBox.Text;
+                // Adição de novo objeto ordem tanto em uma lista como na tabela exibida em tela
+                ordemLista.Add(new Ordem(nomeTextBox.Text, telefoneTextBox.Text, cpfTextBox.Text,
+                    precoTextBox.Text, operacaoComboBox.Text, ativoTextBox.Text, quantidadeTextBox.Text));
 
                 ordensAbertasDataGridView.Rows.Add(nomeTextBox.Text, telefoneTextBox.Text, cpfTextBox.Text, 
                     precoTextBox.Text, operacaoComboBox.Text, ativoTextBox.Text, quantidadeTextBox.Text);
