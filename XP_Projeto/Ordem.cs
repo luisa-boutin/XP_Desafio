@@ -6,8 +6,26 @@ namespace XP_Projeto
 {
     class Ordem
     {
-        private string nome; // Campo
-        public string Nome // Propriedade
+        private string nome; 
+        private string telefone;
+        private string cpf;
+        private string preco;
+        private string operacao;
+        private string ativo;
+        private string quantidade;
+
+        public Ordem(string nome, string telefone, string cpf, string preco, 
+            string operacao, string ativo, string quantidade)
+        {
+            this.nome = nome;
+            this.telefone = telefone;
+            this.cpf = cpf;
+            this.preco = preco;
+            this.operacao = operacao;
+            this.ativo = ativo;
+        }
+
+        public string Nome
         {
             get
             {
@@ -19,8 +37,7 @@ namespace XP_Projeto
             }
         }
 
-        private string telefone; // Campo
-        public string Telefone // Propriedade
+        public string Telefone
         {
             get
             {
@@ -31,9 +48,7 @@ namespace XP_Projeto
                 telefone = value;
             }
         }
-
-        private string cpf; // Campo
-        public string CPF // Propriedade
+        public string CPF
         {
             get
             {
@@ -44,9 +59,7 @@ namespace XP_Projeto
                 cpf = value;
             }
         }
-
-        private string preco; // Campo
-        public string Preco // Propriedade
+        public string Preco
         {
             get
             {
@@ -57,9 +70,8 @@ namespace XP_Projeto
                 preco = value;
             }
         }
-
-        private string operacao; // Campo
-        public string Operacao // Propriedade
+       
+        public string Operacao
         {
             get
             {
@@ -70,9 +82,8 @@ namespace XP_Projeto
                 operacao = value;
             }
         }
-
-        private string ativo; // Campo
-        public string Ativo // Propriedade
+       
+        public string Ativo
         {
             get
             {
@@ -83,8 +94,7 @@ namespace XP_Projeto
                 ativo = value;
             }
         }
-
-        private string quantidade; // Campo
+       
         public string Quantidade
         {
             get
