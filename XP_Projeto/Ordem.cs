@@ -14,6 +14,7 @@ namespace XP_Projeto
         private string ativo;
         private string quantidade;
 
+        // Construtor da classe:
         public Ordem(string nome, string telefone, string cpf, string preco, 
             string operacao, string ativo, string quantidade)
         {
@@ -23,6 +24,7 @@ namespace XP_Projeto
             this.preco = preco;
             this.operacao = operacao;
             this.ativo = ativo;
+            this.quantidade = quantidade;
         }
 
         public string Nome
